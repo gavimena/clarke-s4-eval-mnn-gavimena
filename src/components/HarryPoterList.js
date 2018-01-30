@@ -3,7 +3,12 @@ import React from 'react';
 class HarryPoterList extends React.Component {
 	render(){
 		return(
-			<div></div>
+			<div className="container-characters">
+				<h3> {this.props.name} </h3>
+				<img src={this.props.photo} />
+				<h4> {this.props.house} </h4>
+				<p> {this.props.alive} </p>
+			</div>
 		);
 	}
 }

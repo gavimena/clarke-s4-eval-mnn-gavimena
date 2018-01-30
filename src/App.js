@@ -21,17 +21,29 @@ class App extends Component {
 		});
 	}
 
-  render() {
+	printCharacters() {
+		let charactersToShow = this.state.characters;
+		return (<ul className="listCharacter">
+      {
+      	charactersToShow.map(
+          character => <li>
+            <HarryPoterList name={character.name} photo={character.image} house={character.house}
+				alive={character.alive? 'live': 'dead'} />
+          </li>
+        )
+      }
+    </ul>);
+	}
+
+  	render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
+         	<h1 className="App-title">Harry Potter Characters</h1>
         </header>
 		  <main>
-        	<p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        	</p>
-			<HarryPoterList />
+		  		<input type="text" name="search"></input>
+				<div>{this.printCharacters()}</div>
 		  </main>
       </div>
     );

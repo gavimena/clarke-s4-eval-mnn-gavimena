@@ -13,13 +13,16 @@
   font-size: 1.5em;
 }
 
-.listCharacter {
+.list-character {
 	list-style: none;
+	display: grid;
+	grid-gap: 1rem;
+	grid-row: 1fr 200px 1fr;
+
 }
 
-li {
-	padding-top: 30px;
-	border-bottom: solid 1px;
+.element {
+	grid-row: span 2;
 }
 
 input {
@@ -30,6 +33,10 @@ input {
 }
 
 .dead {
-	width: 10%;
-	height: 10%;
+	width: 5%;
+	height: 5%;
+}
+
+.photo {
+	border: solid 2px;
 }

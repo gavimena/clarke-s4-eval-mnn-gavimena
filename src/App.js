@@ -42,7 +42,7 @@ class App extends Component {
 		  		<main>
 		  			<input type="text" name="search" placeholder="Write a Harry Potter character" onChange={this.filter.bind(this)}/>
 					<div>
-						<ul> {characters.map(character => <li>
+						<ul className="list-character"> {characters.map(character => <li className="element-list">
 						<HarryPoterList
 						name={character.name}
 						photo={character.image}

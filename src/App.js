@@ -43,10 +43,11 @@ class App extends Component {
 		  			<input type="text" name="search" placeholder="Write a Harry Potter character" onChange={this.filter.bind(this)}/>
 					<div>
 						<ul> {characters.map(character => <li>
-						<HarryPoterList name={character.name}
+						<HarryPoterList
+						name={character.name}
 						photo={character.image}
 						house={character.house}
-						alive={character.alive? 'live': 'dead'} />
+						alive={character.alive? 'live': <img src='./images/addon_icon.png' /> } />
 						</li>
 						)}
 						</ul>

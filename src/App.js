@@ -47,7 +47,7 @@ class App extends Component {
 						name={character.name}
 						photo={character.image}
 						house={character.house}
-						alive={character.alive? 'live': <img src='./images/addon_icon.png' /> } />
+						alive={character.alive? 'live': <img className="dead" src={ require('./images/dead.svg') } /> } />
 						</li>
 						)}
 						</ul>

@@ -17,13 +17,14 @@
 	list-style: none;
 	display: grid;
 	grid-gap: 1rem;
-	grid-row: 1fr 200px 1fr;
+	grid-column: 1fr 1fr 1fr;
+	grid-row: auto;
 
 }
 
-.element {
+/* .element {
 	grid-row: span 2;
-}
+} */
 
 input {
 	margin-top: 30px;
@@ -38,5 +39,5 @@ input {
 }
 
 .photo {
-	border: solid 2px;
+	border: solid 4px;
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import HarryPoterList from './components/HarryPoterList';
 
-//funcion constructora
+//función constructora
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -12,7 +12,7 @@ class App extends Component {
 	};
 
 	//Llamada a servidor con promesas
-	componentDidMount() {
+	componentWillMount() {
 		fetch('http://hp-api.herokuapp.com/api/characters')
 		.then(response => response.json())
 		.then(json => {
@@ -42,12 +42,12 @@ class App extends Component {
 		  		<main>
 		  			<input type="text" name="search" placeholder="Write a Harry Potter character" onChange={this.filter.bind(this)}/>
 					<div>
-						<ul className="list-character"> {characters.map(character => <li className="element-list">
+						<ul className="list-character"> {characters.map(character => <li className="element-list" key={character.name}>
 						<HarryPoterList
 						name={character.name}
 						photo={character.image}
 						house={character.house}
-						alive={character.alive? 'live': <img className="dead" src={ require('./images/dead.svg') } /> } />
+						alive={character.alive? 'live': <img className="dead" src={ require('./images/dead.svg')} alt="is dead" /> } />
 						</li>
 						)}
 						</ul>

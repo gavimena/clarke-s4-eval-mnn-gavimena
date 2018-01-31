@@ -35,19 +35,19 @@ class App extends Component {
 		}
     	return (
       	<div className="App">
-        		<header className="App-header">
-         		<h1 className="App-title">Harry Potter Characters</h1>
-					<img className="glasses" src={ require('./images/glasses.svg')} alt="logo" />
+        		<header className="App__header">
+         		<h1 className="App__title">Harry Potter Characters</h1>
+					<img className="App__logo" src={ require('./images/glasses.svg')} alt="logo"/>
         		</header>
 		  		<main>
 		  			<input className="input" type="text" name="search" placeholder="Write a Harry Potter character" onChange={this.filter.bind(this)}/>
 					<div>
-						<ul className="list-character"> {characters.map(character => <li className="element-list" key={character.name}>
+						<ul className="characters-list"> {characters.map(character => <li key={character.name}>
 						<HarryPoterList
 						name={character.name}
 						photo={character.image}
 						house={character.house}
-						alive={character.alive ? <img className="live" src={ require('./images/live.svg')} alt="is alive" /> : <img className="dead" src={ require('./images/dead.svg')} alt="is dead" /> } />
+						alive={character.alive ? <img className="live" src={ require('./images/live.svg')} alt="is alive"/> : <img className="dead" src={ require('./images/dead.svg')} alt="is dead"/> } />
 						</li>
 						)}
 						</ul>

@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-header {
+.App__header {
   background-color: #73111E;
   height: 100px;
   padding: 20px;
@@ -12,27 +12,15 @@
   justify-content: center;
 }
 
-.App-title {
+.App__title {
   font-size: 2.5em;
   font-family: 'Forum', sans-serif;
 }
 
-.glasses {
+.App__logo {
 	width: 50px;
 	height: 60px;
 	margin-left: 20px;
-}
-
-.list-character {
-	list-style: none;
-	display: grid;
-	grid-template-columns: 1fr;
-	padding: 0;
-}
-
-.element-list {
-	/* background-color: #73111E; */
-
 }
 
 .input {
@@ -44,26 +32,48 @@
 	font-size: 1em;
 }
 
+.characters-list {
+	list-style: none;
+	display: grid;
+	grid-gap: 40px;
+	grid-template-columns: 1fr;
+	padding: 0;
+	margin-top: 50px;
+}
+
+.characters__container {
+	display: flex;
+   flex-direction: column;
+   width: 60%;
+   align-content: center;
+   justify-content: center;
+   margin: auto;
+   border: 1px solid;
+}
+
 .dead, .live {
 	width: 50px;
 	height: 50px;
 }
 
-.photo {
-	border: solid 4px;
-	width: 150px;
+.characters__photo {
+	width: 170px;
+	height: 220px;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+	margin-bottom: 20px;
 }
 
-.icons {
-	width: 80%;
+.characters__icons {
 	display: flex;
 	justify-content: space-between;
 }
 
-.houses {
+.characters__houses {
 	width: 50px;
 	padding-top: 50px;
-	overflow: hidden;
 }
 
 .houses--Gryffindor {
@@ -86,26 +96,15 @@
 	background-size: cover;
 }
 
-@media all and (min-width: 450px) {
-	.list-character {
+@media all and (min-width: 600px) {
+	.characters-list {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
-@media all and (min-width: 600px) {
-	.list-character {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-}
-
-@media all and (min-width: 750px) {
-	.list-character {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-}
 
 @media all and (min-width: 1000px) {
-	.list-character {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	.characters-list {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }

@@ -27,10 +27,9 @@ class App extends Component {
 		this.setState({filter: event.target.value})
 	}
 
-
   	render() {
 		let characters = this.state.characters;
-		//Condifción para filtar por letra introducida
+		//Condición para filtar por letra introducida
 		if(this.state.filter){
 			characters = characters.filter( character => character.name.toLowerCase().includes(this.state.filter.toLowerCase()))
 		}
@@ -40,7 +39,7 @@ class App extends Component {
          		<h1 className="App-title">Harry Potter Characters</h1>
         		</header>
 		  		<main>
-		  			<input type="text" name="search" placeholder="Write a Harry Potter character" onChange={this.filter.bind(this)}/>
+		  			<input className="input" type="text" name="search" placeholder="Write a Harry Potter character" onChange={this.filter.bind(this)}/>
 					<div>
 						<ul className="list-character"> {characters.map(character => <li className="element-list" key={character.name}>
 						<HarryPoterList

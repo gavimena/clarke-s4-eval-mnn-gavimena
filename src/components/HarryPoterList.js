@@ -8,7 +8,8 @@ class HarryPoterList extends React.Component {
 				<div className="characters__photo" style={{backgroundImage: `url(${this.props.photo})`}}>
 				</div>
 				<div className="characters__icons">
-					<img className={`characters__houses houses--${this.props.house}`}/>
+					<div className={`characters__houses houses--${this.props.house}`}>
+					</div>
 					<p> {this.props.alive} </p>
 				</div>
 			</div>

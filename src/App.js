@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import HarryPoterList from './components/HarryPoterList';
+import Houses from './components/Houses';
 
 //función constructora
 class App extends Component {
@@ -52,7 +53,13 @@ class App extends Component {
 						)}
 						</ul>
 					</div>
+					<div className="information">
+					<Houses howarts={characters.house}/>
+					</div>
 		  		</main>
+				<footer className="footer">
+				<a href="https://twitter.com/gavimena" className="footer__copyright" target="_blank"> @gavimena </a><p className="footer__copyright"> &copy;Copyrights 2018</p>
+				</footer>
       	</div>
     	);
   	}

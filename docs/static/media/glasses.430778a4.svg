@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="108px" viewBox="0 0 130 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(3.000000, 0.000000)">
+            <g id="Group" transform="translate(0.000000, 52.000000)" stroke="#FFD042" stroke-width="5">
+                <ellipse id="Oval" cx="26" cy="26.5" rx="26" ry="26.5"></ellipse>
+                <ellipse id="Oval-Copy" cx="98" cy="26.5" rx="26" ry="26.5"></ellipse>
+                <path d="M51,21 C55.6872132,17.8141852 59.0205466,16.1475185 61,16 C66.9009782,15.5602303 71,19.6694763 71,21" id="Path-2"></path>
+            </g>
+            <polygon id="Path-3" fill="#FFD042" points="13 39 13 13 23 18.4166667 28 0 25.5 28.1666667 18 23.8333333"></polygon>
+        </g>
+    </g>
+</svg>

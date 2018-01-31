@@ -5,9 +5,13 @@ class HarryPoterList extends React.Component {
 		return(
 			<div className="container-characters">
 				<h3> {this.props.name} </h3>
-				<img className="photo" src={this.props.photo} alt="Harry Potter character"/>
-				<h4> {this.props.house} </h4>
-				<p> {this.props.alive} </p>
+				<div>
+					<img className="photo" src={this.props.photo} alt="Harry Potter character"/>
+				</div>
+				<div className="icons">
+					<img className={`houses houses--${this.props.house}`} />
+					<p> {this.props.alive} </p>
+				</div>
 			</div>
 		);
 	}
